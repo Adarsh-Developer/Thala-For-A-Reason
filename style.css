@@ -1,13 +1,13 @@
 @font-face {
   font-family: gilroy;
-  src: url(./Gilroy-Regular.woff2);
+  src: url(./Poppins\ Font.woff2);
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: gilroy;
+  font-family: poppins;
 }
 
 html, body{
@@ -20,7 +20,7 @@ html, body{
 }
 
 .main__container{
-  width: 450px;
+  width: 500px;
   background: #6e8eefbc;
   border-radius: 10px;
   border: 2px solid #fff;
@@ -33,6 +33,7 @@ html, body{
   width: 100%;
   color: #fff;
   text-align: center;
+  font-weight: 600;
 }
 
 form{
