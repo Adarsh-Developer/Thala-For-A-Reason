@@ -5,16 +5,19 @@ const reward = document.querySelector('.reward')
 button.addEventListener('click', (e) => {
   e.preventDefault()
   inputValue = inputText.value
+  inputText.value = ''
   sum = 0;
   for(let i = 0; i < inputValue.length; i++) {
     sum += parseInt(inputValue[i])
   }
 
-  if(inputValue.length === 7){
-    reward.innerText = 'Thala For A Reason'
+  if(inputValue === ''){
+    Swal.fire("Please type anything");
+  }else if(inputValue.length === 7){
+    Swal.fire("Thala For A Reason");
   }else if(sum === 7){
-    reward.innerText = 'Thala For A Reason'
+    Swal.fire("Thala For A Reason");
   }else{
-    reward.innerText = 'No Thals For You'
+    Swal.fire("No Thala For You");
   }
 })
